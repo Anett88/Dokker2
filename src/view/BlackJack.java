@@ -1,5 +1,8 @@
 package view;
 
+import java.io.File;
+import javax.swing.JFileChooser;
+
 public class BlackJack extends javax.swing.JFrame {
 
     public BlackJack() {
@@ -124,6 +127,11 @@ public class BlackJack extends javax.swing.JFrame {
         jRadioButton2.setText("lapok összértéke");
 
         jButton3.setText("Mentés");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Kilépés");
 
@@ -214,6 +222,26 @@ public class BlackJack extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+      JFileChooser fc = new JFileChooser();
+    
+      fc.showOpenDialog(jPanel1);
+        fc.getSelectedFile();
+        fc.getCurrentDirectory();
+        
+        
+      
+      
+      
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    public void felugro(){
+    
+    
+    
+}
+    
+        
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
